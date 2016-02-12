@@ -67,7 +67,7 @@
 	</script>
 </head>
 <body>
-	<div id="mapa"><img src="mapa_home.png"></div>
+	<div id="mapa"><img src="images/mapa_home.png"></div>
 	<div id="login">
 	<form action="<?php echo $current_file; ?>" method="POST">
 Username: <input type="text" name="username"> Password: <input type="password" name="password">

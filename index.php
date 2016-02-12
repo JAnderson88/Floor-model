@@ -1,6 +1,6 @@
 <?php
-require 'connect.php'; 
-require 'core.php';
+require '/php/connect.php'; 
+require '/php/core.php';
 
 if (loggedin()) {
 	header('Location: start2.php');
