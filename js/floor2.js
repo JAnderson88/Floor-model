@@ -107,35 +107,35 @@ function buttonSetup(button, butt){
 	if(button <= 15 && button > 10){
 		for(var i = 0; i <= 4; i++){
 			button_s[i] = document.createElement("div");
-			button_s[i].innerHTML = '<button class="button_2" id="'+butt[i]+'"><img src="' + butt[i] +'.png"></button>';
+			button_s[i].innerHTML = '<button class="button_2" id="'+butt[i]+'"><img src="images/' + butt[i] +'.png"></button>';
 			document.getElementById("create1").appendChild(button_s[i]);
 		}
 		for(var i = 5; i <= 9; i++){
 			button_s[i] = document.createElement("div");
-			button_s[i].innerHTML = '<button class="button_2" id="'+ butt[i] +'"><img src="' + butt[i] +'.png"></button>';
+			button_s[i].innerHTML = '<button class="button_2" id="'+ butt[i] +'"><img src=images/"' + butt[i] +'.png"></button>';
 			document.getElementById("create2").appendChild(button_s[i]);
 		}
 		for(var i = 10; i <= button-1; i++){
 			button_s[i] = document.createElement("div");
-			button_s[i].innerHTML = '<button class="button_2" id="'+ butt[i] +'"><img src="' + butt[i] +'.png"></button>';
+			button_s[i].innerHTML = '<button class="button_2" id="'+ butt[i] +'"><img src=images/"' + butt[i] +'.png"></button>';
 			document.getElementById("create2").appendChild(button_s[i]);
 		}
 	} else if(button<=10 && button > 5){
 		for(var i = 0; i <= 4; i++){
 			button_s[i] = document.createElement("div");
-			button_s[i].innerHTML = '<button class="button_2" id="'+butt[i]+'"><img src="' + butt[i] +'.png"></button>';
+			button_s[i].innerHTML = '<button class="button_2" id="'+butt[i]+'"><img src=images/"' + butt[i] +'.png"></button>';
 			document.getElementById("create1").appendChild(button_s[i]);
 		}
 		for(var i = 5; i <= button-1; i++){
 			button_s[i] = document.createElement("div");
-			button_s[i].innerHTML = '<button class="button_2" id="'+ butt[i] +'"><img src="' + butt[i] +'.png"></button>';
+			button_s[i].innerHTML = '<button class="button_2" id="'+ butt[i] +'"><img src=images/"' + butt[i] +'.png"></button>';
 			document.getElementById("create2").appendChild(button_s[i]);
 		}
 
 	} else if(button<=5 && button > 0){
 		for(var i = 0; i <= button-1; i++){
 			button_s[i] = document.createElement("div");
-			button_s[i].innerHTML = '<button class="button_2" id="'+ butt[i] +'"><img src="' + butt[i] +'.png"></button>';
+			button_s[i].innerHTML = '<button class="button_2" id="'+ butt[i] +'"><img src=images/"' + butt[i] +'.png"></button>';
 			document.getElementById("create1").appendChild(button_s[i]);
 			}
 	} else {
@@ -210,15 +210,15 @@ function floorAssemble(numFloors, floors){
 		var floor5 = document.createElement("div");
 		floor5.innerHTML = '<div class="tabb" id="floor5" onClick="five_select()"> Floor 5 </div>';
 		var one = document.createElement("div");
-		one.innerHTML = '<div class="map" id="map1"><img src="' + floor_one +'"></div>';
+		one.innerHTML = '<div class="map" id="map1"><img src=images/"' + floor_one +'"></div>';
 		var two = document.createElement("div");
-		two.innerHTML = '<div class="map" id="map2"><img src="' + floor_two +'"></div>';
+		two.innerHTML = '<div class="map" id="map2"><img src=images/"' + floor_two +'"></div>';
 		var three = document.createElement("div");
-		three.innerHTML = '<div class="map" id="map3"><img src="' + floor_three +'"></div>';
+		three.innerHTML = '<div class="map" id="map3"><img src=images/"' + floor_three +'"></div>';
 		var four = document.createElement("div");
-		four.innerHTML = '<div class="map" id ="map4"><img src="' + floor_four +'"></div>';
+		four.innerHTML = '<div class="map" id ="map4"><img src=images/"' + floor_four +'"></div>';
 		var five = document.createElement("div");
-		five.innerHTML = '<div class="map" id="map5"><img src="' + floor_five +'"></div>';
+		five.innerHTML = '<div class="map" id="map5"><img src=images/"' + floor_five +'"></div>';
 		document.getElementById("tab").appendChild(floor1);
 		document.getElementById("tab").appendChild(floor2);
 		document.getElementById("tab").appendChild(floor3);
