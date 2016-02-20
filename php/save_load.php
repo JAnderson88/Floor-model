@@ -1,11 +1,11 @@
 <?php
 
-	require_once 'php/connect.php';
-	require_once 'php/query.php';
+	require_once '/home/ubuntu/workspace/php/connect.php';
+	require_once '/home/ubuntu/workspace/php/query.php';
 	
 	$user = $_SESSION['user'];
-	$name = $result['Name'];
-	$num = $result['Number'];
+	$name = $result['name'];
+	$num = $result['number'];
 	$write = $name.$num.$user;
 	$file = $write.'.xml';
 	if($result['save']== ''){

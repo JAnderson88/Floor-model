@@ -5,37 +5,37 @@
 	<title></title>
 
 	<?php 
-	require 'connect.php';  
-	include 'query.php';
-	include 'save_load.php';
-	include 'submit.php';
+	require '/home/ubuntu/workspace/php/connect.php';  
+	include '/home/ubuntu/workspace/php/query.php';
+	include '/home/ubuntu/workspace/php/save_load.php';
+	include '/home/ubuntu/workspace/php/submit.php';
 	
 	
 	?>
 
-	<link rel="stylesheet" type="text/css" href="css/floor2.css">
+	<link rel="stylesheet" type="text/css" href="/css/floor2.css">
 
 </head>
 <body>
 
 	<div id="banner">
-		<!-- <div id="logo"><img src="mapa.png" ></div> -->
+		<div id="logo"><img src="/images/mapa.png" ></div> 
 		<div id="tab"></div>
 	</div>
 	<div id="container">
 		<div class="map" id="map">
 			<div id="holder"></div> 
-			<div id="up" onClick="mapMoveUp()"><img src="arrow_up.png" width = "36" height="54"></div>
-			<div id="down" onClick="mapMoveDown()"><img src="arrow_down.png" width = "36" height="54"></div>
-			<div id="left" onClick="mapMoveLeft()"><img src="arrow_left.png" width = "54" height="36"></div>
-			<div id="right" onClick="mapMoveRight()"><img src="arrow_right.png" width = "54" height="36"></div>
+			<div id="up" onClick="mapMoveUp()"><img src="/images/arrow_up.png" width = "36" height="54" alt="arrow_up"></div>
+			<div id="down" onClick="mapMoveDown()"><img src="/images/arrow_down.png" width = "36" height="54"></div>
+			<div id="left" onClick="mapMoveLeft()"><img src="/images/arrow_left.png" width = "54" height="36"></div>
+			<div id="right" onClick="mapMoveRight()"><img src="/images/arrow_right.png" width = "54" height="36"></div>
 			<div id="arrow_cont">
-				<div id="count_clock" height="40"><img src="arrow_rot_1.png"></div>
-				<div id="glass" height="40"><img src ="glass.png"></div>
-				<div id="zoom_up" height="22"><img src ="up.png"></div>
+				<div id="count_clock" height="40"><img src="/images/arrow_rot_1.png"></div>
+				<div id="glass" height="40"><img src ="/images/glass.png"></div>
+				<div id="zoom_up" height="22"><img src ="/images/up.png"></div>
 				<div id="zoom"></div>
-				<div id="zoom_down" height="22"><img src ="down.png"></div>
-				<div id="clock" height="40"><img src="arrow_rot_2.png"></div>
+				<div id="zoom_down" height="22"><img src ="/images/down.png"></div>
+				<div id="clock" height="40"><img src="/images/arrow_rot_2.png"></div>
 			</div>
 		</div>
 		<div id="creator">
@@ -50,14 +50,14 @@
 	</div>
 	<div id="left_pad"></div>
 	<div id="right_pad"></div>
-	<div id="footer"><a href="logout.php">Log out</a></div>
+	<div id="footer"><a href="/home/ubuntu/workspace/php/logout.php">Log out</a></div>
 	
 
-	<script type="text/javascript" src="js/j_query10.js"></script>
-	<script type="text/javascript" src="js/floor2.js"></script>
-	<script type="text/javascript" src="js/ui/jquery-ui.js"></script>
-	<script type="text/javascript" src="js/jquery-animate-css-rotate-scale.js"></script>
-	<script type="text/javascript" src="js/upclick-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/floor2.js"></script>
+	<script type="text/javascript" src="/js/ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery-animate-css-rotate-scale.js"></script>
+	<!--<script type="text/javascript" src="/home/ubuntu/workspace/js/upclick-min.js"></script>-->
 	
 	<script>
 		on = new Array();
@@ -89,12 +89,12 @@
 		maxHeight1 = "<?php echo$result['max_h_1']?>";
 		xAdj = <?php echo$result['xadj']?>;
 		yAdj = <?php echo$result['yadj']?>;
-		__a = <?php echo$result['a']?>;
-		__b = <?php echo$result['b']?>;
-		__c = <?php echo$result['c']?>;
-		__d = <?php echo$result['d']?>;
-		__e = <?php echo$result['e']?>;
-		__f = <?php echo$result['f']?>;
+		//__a = <?php echo$result['a']?>;
+		//__b = <?php echo$result['b']?>;
+		//__c = <?php echo$result['c']?>;
+		//__d = <?php echo$result['d']?>;
+		//__e = <?php echo$result['e']?>;
+		//__f = <?php echo$result['f']?>;
 		console.log(xAdj+' '+yAdj);
 		floorAssemble(numFloors, floors);
 		arrowSetup();
